@@ -17,7 +17,7 @@ date_now = datetime.now().strftime("%d-%m-%Y-%H-%M-%S")
 label_map = ['Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
 names=['emotion','pixels','usage']
 img_size = 48 # each picture is a list of 48x48 pixels 
-EPOCHS = 100
+EPOCHS = 2
 BATCH_SIZE = 40
 
 data = pd.read_csv('fer2013.csv')
@@ -35,18 +35,18 @@ def get_training_data(df):
 
 X = get_training_data(data) / 255  #divide by 255 to scale every value between [0, 1]
 y = data['emotion'].values.astype('int') #converts the emotions to ints
-y = to_categorical(y) #convert to categorical
+y = to_categorical(y)
 
 #Testing one image:
-plt.imshow(X[0], cmap='gray')
-plt.show()
+#plt.imshow(X[0], cmap='gray')
+#plt.show()
 
 #Checking for any empty values:
 print(data.isnull().sum())
 
 # Checking the distribution of emotions
-sns.countplot(x='emotion', data=data)
-plt.show()
+#sns.countplot(x='emotion', data=data)
+#plt.show()
 
 #Begin train/test splitting
 x_train, x_valid, y_train, y_valid = train_test_split(X, y, test_size=.25, random_state=42)
