@@ -1,4 +1,4 @@
-<<<<<<< master
+
 # Emotion Detection System
 
 ## Overview
@@ -6,15 +6,12 @@
 Developed an advanced emotion detection system leveraging a Convolutional Neural Network (CNN) which achieved an impressive 87% accuracy in recognizing a range of facial expressions. The system was designed to perform real-time face detection using OpenCV, enabling it to accurately analyze and interpret emotions from both static images and live video feeds. This involved preprocessing the input data to ensure optimal performance of the CNN, implementing robust algorithms to handle various lighting conditions and angles, and integrating a user-friendly interface for seamless interaction. The system's real-time capabilities make it suitable for applications in diverse fields such as human-computer interaction, security, and customer service, providing valuable insights into user emotions.
 
 ## Use
-1. Downloading model training csv: fer2013.csv
+Downloading model training csv: fer2013.csv
 https://www.kaggle.com/datasets/ahmedmoorsy/facial-expression
 
-2. Add .csv file to the model directory
-3. #### pip install -r requirements.txt
-4. ### cd model
-5. ### 'python train.py' 
-6. ### cd ..
-7. ### python main.py
-=======
-Developed an advanced emotion detection system leveraging a Convolutional Neural Network (CNN) which achieved an impressive 87% accuracy in recognizing a range of facial expressions. The system was designed to perform real-time face detection using OpenCV, enabling it to accurately analyze and interpret emotions from both static images and live video feeds. This involved preprocessing the input data to ensure optimal performance of the CNN, implementing robust algorithms to handle various lighting conditions and angles, and integrating a user-friendly interface for seamless interaction. The system's real-time capabilities make it suitable for applications in diverse fields such as human-computer interaction, security, and customer service, providing valuable insights into user emotions.
->>>>>>> main
+Add .csv file to the model directory
+### `pip install -r requirements.txt`
+### `cd model`
+### `python train.py`
+### `cd ..`
+### `python main.py`
